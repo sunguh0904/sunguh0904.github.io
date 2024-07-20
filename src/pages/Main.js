@@ -4,12 +4,14 @@ import SNB from '../common/SNB';
 import '../css/main.css';
 
 const Main = () => {
+
+    
     return (
         <>
             <div className='main-wrap'>
                 <Header />
-                <SNB />
-                <p>Web Developer</p>
+                {/* <SNB /> */}
+                <div className='main-content'>Web Developer</div>
                 <Footer />
             </div>
         </>

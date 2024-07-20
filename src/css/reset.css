@@ -25,6 +25,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	box-sizing: border-box;
+	/* 모든 영역에 드래그 방지 */
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
 }
 ol, ul {
 	list-style: none;
