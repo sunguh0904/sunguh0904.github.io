@@ -1,8 +1,18 @@
+import Footer from '../common/Footer';
+import Header from '../common/Header';
+import SNB from '../common/SNB';
+import '../css/main.css';
+
 const Main = () => {
     return (
-        <div>
-            <h1 className="text-3xl">Main</h1>
-        </div>
+        <>
+            <div className='main-wrap'>
+                <Header />
+                <SNB />
+                <p>Web Developer</p>
+                <Footer />
+            </div>
+        </>
     )
 }
 

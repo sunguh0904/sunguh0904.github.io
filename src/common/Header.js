@@ -1,7 +1,10 @@
+import '../css/common.css';
+
 const Header = () => {
     return (
         <header>
-            <h1>My First React App</h1>
+            <div className='header-current-page'>HOME</div>
+            <div className='header-name'>SUNG U HYEON</div>
         </header>
     )
 }

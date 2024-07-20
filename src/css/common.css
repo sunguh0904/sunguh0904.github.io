@@ -1,0 +1,25 @@
+/* header =================================================================================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    margin-top: 40px;
+}
+
+.header-current-page {
+    margin-left: 70px;
+}
+
+.header-name {
+    margin-right: 70px;
+}
+
+/* footer =================================================================================================================================== */
+footer {
+    position: absolute;
+    bottom: 40px;
+    right: 70px;
+    text-align: right;
+}

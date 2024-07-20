@@ -1,13 +1,13 @@
-import "./index.css";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
+import MainLayouts from "./layouts/MainLayouts";
+import MainRoute from "./route/MainRoute";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Main />}>
+        <Route path="/" element={<MainLayouts />}>
+          <Route index element={<MainRoute />} />
         </Route>
       </Routes>
     </BrowserRouter>
