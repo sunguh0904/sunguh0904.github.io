@@ -18,3 +18,10 @@
     color: #fff;
     mix-blend-mode: difference;
 }
+
+/* 브라우저 너비가 800px 이하일 때 적용 */
+@media (max-width: 800px) {
+    .main-content {
+        font-size: 6em;
+    }
+}
