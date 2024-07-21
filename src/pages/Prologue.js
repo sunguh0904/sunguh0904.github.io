@@ -17,6 +17,11 @@ const Prologue = () => {
                             <div className='profile-birth-date'></div>
                         </div>
                     </div>
+                    <div className='summary-wrap'>
+                        <div className='summary-certifiacte'></div>
+                        <div className='summary-education'></div>
+                        <div className='summary-skill'></div>
+                    </div>
                 </div>
             </div>
         </>

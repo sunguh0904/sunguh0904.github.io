@@ -36,3 +36,14 @@
 .prologue-content {
     color: #fff;
 }
+
+.profile-wrap {
+    width: 270px;
+    height: 250px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-20%, -50%);
+}
