@@ -1,5 +1,5 @@
 /* header =================================================================================================================================== */
-header {
+.home-header {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -9,18 +9,45 @@ header {
     width: 100%;
 }
 
-header div {
+.home-header div {
     margin-top: 40px;
     font-size: 24px;
 }
 
-.header-current-page {
+.home-header-current-page {
     margin-left: 50px;
 }
 
-.header-name {
+.home-header-name {
     margin-right: 50px;
     color: #fff;
+}
+
+.main-wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, #fff 50%, #000 50%);
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+/* 브라우저 넓이에 따른 폰트 사이즈 */
+@media (max-width: 800px) {
+    .main-content {
+        font-size: 6em;
+    }
 }
 
 /* footer =================================================================================================================================== */

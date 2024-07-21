@@ -1,0 +1,38 @@
+/* header =================================================================================================================================== */
+.prologue-header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.prologue-header div {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.prologue-header-current-page {
+    margin-left: 50px;
+    color: #fff;
+}
+
+.prologue-header-name {
+    margin-right: 50px;
+    color: #000;
+}
+
+/* prologue =================================================================================================================================== */
+.prologue-wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000 50%, #fff 50%);
+    position: relative;
+}
+
+.prologue-content {
+    color: #fff;
+}
