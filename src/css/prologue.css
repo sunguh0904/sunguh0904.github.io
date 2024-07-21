@@ -84,5 +84,33 @@
 .summary-wrap {
     width: 50%;
     height: 100vh;
-    border: 1px solid #002aff;
+    color: #fff;
+}
+
+.summary-content {
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.summary-title {
+    font-size: 30px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    /* list-style: disc; */
+}
+
+.summary-discription {
+    font-size: 14px;
+}
+
+.summary-discription li {
+    padding-left: 20px;
+    border-left: 1px solid #fff;
+    line-height: 30px;
 }
