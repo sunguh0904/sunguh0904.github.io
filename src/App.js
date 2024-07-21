@@ -4,7 +4,7 @@ import MainRoute from "./route/MainRoute";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<MainLayouts />}>
           <Route index element={<MainRoute />} />
