@@ -17,14 +17,17 @@
     font-weight: bold;
     color: #fff;
     mix-blend-mode: difference;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
-/* 브라우저 너비가 800px 이하일 때 적용 */
+/* 브라우저 넓이에 따른 폰트 사이즈 */
 @media (max-width: 800px) {
     .main-content {
         font-size: 6em;
+    }
+}
+@media (max-width: 500px) {
+    .main-content {
+        font-size: 4em;
     }
 }
 
