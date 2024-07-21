@@ -1,19 +1,11 @@
-import Footer from '../common/Footer';
-import Header from '../common/Header';
-import SNB from '../common/SNB';
-import '../css/main.css';
+import Home from './Home';
+import Prologue from './Prologue';
 
 const Main = () => {
-
-    
     return (
         <>
-            <div className='main-wrap'>
-                <Header />
-                {/* <SNB /> */}
-                <div className='main-content'>Web Developer</div>
-                <Footer />
-            </div>
+            <Home />
+            <Prologue />
         </>
     )
 }
