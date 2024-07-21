@@ -9,18 +9,18 @@ const Prologue = () => {
                     <div className='prologue-header-name'>SUNG U HYEON</div>
                 </div>
                 <div className="prologue-content">
-                    <div className='profile-wrap'>
-                        <div className='profile-img'></div>
-                        <div className='profile-info'>
-                            <div className='profile-ko-name'></div>
-                            <div className='profile-eng-name'></div>
-                            <div className='profile-birth-date'></div>
-                        </div>
-                    </div>
                     <div className='summary-wrap'>
                         <div className='summary-certifiacte'></div>
                         <div className='summary-education'></div>
                         <div className='summary-skill'></div>
+                    </div>
+                    <div className='profile-wrap'>
+                        <div className='profile-img'></div>
+                        <div className='profile-info'>
+                            <div className='profile-ko-name'>성우현</div>
+                            <div className='profile-eng-name'>SUNG U HYEON</div>
+                            <div className='profile-birth-date'>1996.09.04</div>
+                        </div>
                     </div>
                 </div>
             </div>
