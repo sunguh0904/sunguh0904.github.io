@@ -42,30 +42,30 @@ const Prologue = () => {
                                         </li>
                                         <li>
                                             <span className='summary-position'>Back</span>
-                                            <span><img src='' alt='java' /></span>
-                                            <span><img src='' alt='springboot' /></span>
-                                            <span><img src='' alt='jpa' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/back/java.png`} alt='java' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/back/springBoot.png`} alt='springboot' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/back/jpa.png`} alt='jpa' /></span>
                                         </li>
                                         <li><span className='summary-position'>Database</span>
-                                            <span><img src='' alt='mysql' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/db/mysql.png`} alt='mysql' /></span>
                                         </li>
                                         <li>
                                             <span className='summary-position'>Server</span>
-                                            <span><img src='' alt='tomcat' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/server/tomcat.png`} alt='tomcat' /></span>
                                         </li>
                                         <li>
                                             <span className='summary-position'>Deploy</span>
-                                            <span><img src='' alt='aws' /></span>
-                                            <span><img src='' alt='docker' /></span>
-                                            <span><img src='' alt='linux' /></span>
-                                            <span><img src='' alt='ubuntu' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/deploy/aws.png`} alt='aws' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/deploy/docker.png`} alt='docker' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/deploy/linux.png`} alt='linux' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/deploy/ubuntu.png`} alt='ubuntu' /></span>
                                         </li>
                                         <li>
                                             <span className='summary-position'>Tool</span>
-                                            <span><img src='' alt='intellij' /></span>
-                                            <span><img src='' alt='figma' /></span>
-                                            <span><img src='' alt='git' /></span>
-                                            <span><img src='' alt='gradle' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/intellij.png`} alt='intellij' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/figma.png`} alt='figma' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/git.png`} alt='git' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/gradle.png`} alt='gradle' /></span>
                                         </li>
                                     </ul>
                                 </ul>
