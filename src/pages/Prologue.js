@@ -15,8 +15,8 @@ const Prologue = () => {
                                 <ul>
                                     <li className='summary-title'>CERTIFICATE</li>
                                     <ul className='summary-discription'>
-                                        <li><span>2016.03</span> <span>자동차운전면허 1종 보통</span></li>
-                                        <li><span>2021.05</span> <span>GTQ 그래픽 기술 자격증 1급</span></li>
+                                        <li><span className='summary-position'>2016.03</span> <span>자동차운전면허 1종 보통</span></li>
+                                        <li><span className='summary-position'>2021.05</span> <span>GTQ 그래픽 기술 자격증 1급</span></li>
                                     </ul>
                                 </ul>
                             </div>
@@ -24,8 +24,8 @@ const Prologue = () => {
                                 <ul>
                                     <li className='summary-title'>EDUCATION</li>
                                     <ul className='summary-discription'>
-                                        <li><span>2021.02 ~ 2021.08</span> <span>엠비씨(MBC) 아카데미 반응형 UI/UX 웹퍼블리셔 수료</span></li>
-                                        <li><span>2024.01 ~ 2024.07</span> <span>하이미디어 아카데미 React.js/Springboot 자바 풀스텍 9기 수료</span></li>
+                                        <li><span className='summary-position'>2021.02 ~ 2021.08</span> <span>엠비씨(MBC) 아카데미 반응형 UI/UX 웹퍼블리셔 수료</span></li>
+                                        <li><span className='summary-position'>2024.01 ~ 2024.07</span> <span>하이미디어 아카데미 React.js/Springboot 자바 풀스텍 9기 수료</span></li>
                                     </ul>
                                 </ul>
                             </div>
@@ -34,34 +34,34 @@ const Prologue = () => {
                                     <li className='summary-title'>USED SKILL & TOOL</li>
                                     <ul className='summary-discription'>
                                         <li>
-                                            <span>Front</span>
-                                            <span><img src='' alt='html' /></span>
-                                            <span><img src='' alt='css' /></span>
-                                            <span><img src='' alt='js' /></span>
-                                            <span><img src='' alt='react' /></span>
+                                            <span className='summary-position'>Front</span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/front/html-5.png`} alt='html' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/front/css-3.png`} alt='css' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/front/js.png`} alt='js' /></span>
+                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/front/react.png`} alt='react' /></span>
                                         </li>
                                         <li>
-                                            <span>Back</span>
+                                            <span className='summary-position'>Back</span>
                                             <span><img src='' alt='java' /></span>
                                             <span><img src='' alt='springboot' /></span>
                                             <span><img src='' alt='jpa' /></span>
                                         </li>
-                                        <li><span>Database</span>
+                                        <li><span className='summary-position'>Database</span>
                                             <span><img src='' alt='mysql' /></span>
                                         </li>
                                         <li>
-                                            <span>Server</span>
+                                            <span className='summary-position'>Server</span>
                                             <span><img src='' alt='tomcat' /></span>
                                         </li>
                                         <li>
-                                            <span>Deploy</span>
+                                            <span className='summary-position'>Deploy</span>
                                             <span><img src='' alt='aws' /></span>
                                             <span><img src='' alt='docker' /></span>
                                             <span><img src='' alt='linux' /></span>
                                             <span><img src='' alt='ubuntu' /></span>
                                         </li>
                                         <li>
-                                            <span>Tool</span>
+                                            <span className='summary-position'>Tool</span>
                                             <span><img src='' alt='intellij' /></span>
                                             <span><img src='' alt='figma' /></span>
                                             <span><img src='' alt='git' /></span>
