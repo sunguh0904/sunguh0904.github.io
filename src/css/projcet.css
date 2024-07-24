@@ -88,6 +88,44 @@
     }
 }
 
+.project-description {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 700px;
+    border-left: 1px solid #fff;
+    padding-left: 13px;
+}
+
+.project-description h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.project-description h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.project-description h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-section,
+.project-purpose {
+    margin-bottom: 20px;
+}
+
+.project-description li {
+    list-style: circle;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
 /* header =================================================================================================================================== */
 .project-header {
     display: flex;
@@ -97,6 +135,8 @@
     left: 0;
     z-index: 3;
     width: 100%;
+    background: linear-gradient(90deg, #fff 50%, #000 50%);
+    height: 120px;
 }
 
 .project-header div {
