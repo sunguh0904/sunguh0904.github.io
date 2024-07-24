@@ -64,7 +64,7 @@ const Projcet = () => {
                         {
                             !isTrueErp && !isTrueDosirak &&
                             <div className='project-default'>
-                                <p>PROCJET</p>
+                                <p>PROJECT</p>
                                 <p>CLICK?</p>
                             </div>
                         }
