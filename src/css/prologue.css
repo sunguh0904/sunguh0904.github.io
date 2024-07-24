@@ -20,6 +20,8 @@
     left: 0;
     z-index: 3;
     width: 100%;
+    background: linear-gradient(90deg, #000 50%, #fff 50%);
+    height: 120px;
 }
 
 .prologue-header div {

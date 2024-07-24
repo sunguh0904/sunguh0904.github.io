@@ -65,7 +65,6 @@ const Prologue = () => {
                                             <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/intellij.png`} alt='intellij' /></span>
                                             <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/figma.png`} alt='figma' /></span>
                                             <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/git.png`} alt='git' /></span>
-                                            <span className='img-border'><img src={`${process.env.PUBLIC_URL}/icons/tool/gradle.png`} alt='gradle' /></span>
                                         </li>
                                     </ul>
                                 </ul>

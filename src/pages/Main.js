@@ -1,4 +1,5 @@
 import Home from './Home';
+import Projcet from './Project';
 import Prologue from './Prologue';
 
 const Main = () => {
@@ -6,6 +7,7 @@ const Main = () => {
         <>
             <Home />
             <Prologue />
+            <Projcet />
         </>
     )
 }
