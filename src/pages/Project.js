@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import '../css/projcet.css';
 
 const Projcet = () => {
 
     const [isTrueErp, setIsTrueErp] = useState(false);
     const [isTrueDosirak, setIsTrueDosirak] = useState(false);
+    const [hoverErp, setHoverErp] = useState(false);
+    const [hoverDosirak, setHoverDosirak] = useState(false);
 
     const handleClickErp = () => {
         setIsTrueErp(true);
@@ -16,10 +18,17 @@ const Projcet = () => {
         setIsTrueErp(false)
     }
 
-    useEffect(() => {
-        console.log("useEffect: isTrueErp = " + isTrueErp);
-        console.log("useEffect: isTrueDosirak = " + isTrueDosirak);
-    }, [isTrueErp, isTrueDosirak])
+    const erpStyle = {
+        color: isTrueErp || hoverErp ? '#fff' : '#000',
+        backgroundColor: isTrueErp || hoverErp ? '#000' : '#fff',
+        transition: 'background-color .5s ease, color .5s ease'
+    };
+
+    const dosirakStyle = {
+        color: isTrueDosirak || hoverDosirak ? '#fff' : '#000',
+        backgroundColor: isTrueDosirak || hoverDosirak ? '#000' : '#fff',
+        transition: 'background-color .5s ease, color .5s ease'
+    };
 
     return (
         <>
@@ -30,11 +39,23 @@ const Projcet = () => {
                 </div>
                 <div className='project-content'>
                     <div className='project-list'>
-                        <div className='project-item' onClick={handleClickErp}>
+                        <div
+                            className='project-item'
+                            onClick={handleClickErp}
+                            style={erpStyle}
+                            onMouseEnter={() => setHoverErp(true)}
+                            onMouseLeave={() => setHoverErp(false)}
+                        >
                             <div className='project-item-title'>Team Project:</div>
                             <div className='project-item-name'>Panda Office HR ERP System</div>
                         </div>
-                        <div className='project-item' onClick={handleClickDosirak}>
+                        <div
+                            className='project-item'
+                            onClick={handleClickDosirak}
+                            style={dosirakStyle}
+                            onMouseEnter={() => setHoverDosirak(true)}
+                            onMouseLeave={() => setHoverDosirak(false)}
+                        >
                             <div className='project-item-title'>Team Project:</div>
                             <div className='project-item-name'>Dosirak</div>
                         </div>
