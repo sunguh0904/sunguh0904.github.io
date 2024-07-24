@@ -19,7 +19,13 @@ const Projcet = () => {
                             <div className='project-item-name'>Dosirak</div>
                         </div>
                     </div>
-                    <div className='project-view'></div>
+                    <div className='project-view'>
+                        <div className='project-default'>
+                            <p>PROCJET</p>
+                            <p>CLICK?</p>
+                        </div>
+                        <div className='project-description'></div>
+                    </div>
                 </div>
             </div>
         </>
