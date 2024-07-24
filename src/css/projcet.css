@@ -1,5 +1,5 @@
 /* project =================================================================================================================================== */
-.projcet-wrap {
+.project-wrap {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -7,8 +7,65 @@
     position: relative;
 }
 
+.project-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.project-list {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid #b700ff;
+    position: relative;
+}
+
+.project-view {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid #ff0000;
+}
+
+.project-item {
+    width: 80%;
+    max-width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX( -50% );
+}
+
+/* .project-item-bg {
+    background-image: url(../img/pandaOffice_logo.png);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    opacity: .1;
+} */
+
+/* .project-item-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .9) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} */
+
+.project-item-title {
+    font-size: 24px;
+    color: #000;
+}
+
 /* header =================================================================================================================================== */
-.projcet-header {
+.project-header {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -18,17 +75,17 @@
     width: 100%;
 }
 
-.projcet-header div {
+.project-header div {
     margin-top: 40px;
     font-size: 24px;
 }
 
-.projcet-header-current-page {
+.project-header-current-page {
     margin-left: 50px;
     color: #000;
 }
 
-.projcet-header-name {
+.project-header-name {
     margin-right: 50px;
     color: #fff;
 }
