@@ -12,7 +12,11 @@ const Projcet = () => {
                     <div className='project-list'>
                         <div className='project-item'>
                             <div className='project-item-title'>Team Project:</div>
-                            <div className='project-item-description'>Panda Office ERP System</div>
+                            <div className='project-item-name'>Panda Office HR ERP System</div>
+                        </div>
+                        <div className='project-item'>
+                            <div className='project-item-title'>Team Project:</div>
+                            <div className='project-item-name'>Dosirak</div>
                         </div>
                     </div>
                     <div className='project-view'></div>
