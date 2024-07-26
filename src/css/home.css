@@ -6,7 +6,7 @@
     width: 100%;
     background: linear-gradient(90deg, #fff 50%, #000 50%);
     height: 120px;
-    font-size: 24px;
+    font-size: 1.5em;
     justify-content: space-between;
     align-items: center;
 }
@@ -40,32 +40,11 @@
     mix-blend-mode: difference;
 }
 
-/* 브라우저 넓이에 따른 폰트 사이즈 */
-@media (max-width: 800px) {
-    .home-header {
-        height: 50px;
-        border: 1px solid #ff0000;
-        font-size: 1em;
-    }
-
-    /* .home-header-current-page {
-        margin-left: 10px;
-    }
-    
-    .home-header-name {
-        margin-right: 50px;
-    } */
-
-    .main-content {
-        font-size: 5em;
-    }
-}
-
 /* footer =================================================================================================================================== */
 footer {
     position: absolute;
-    bottom: 40px;
-    right: 50px;
+    bottom: 4%;
+    right: 4%;
     text-align: right;
 }
 
@@ -74,6 +53,31 @@ footer:not(:first-child) {
 }
 
 .footer-contact {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #fff;
+}
+
+/* mobile =================================================================================================================================== */
+@media (max-width: 800px) {
+    .home-header {
+        height: 50px;
+        font-size: 1em;
+    }
+
+    .main-content {
+        font-size: 5em;
+    }
+
+    footer {
+        bottom: 2%;
+    }
+
+    .footer-contact {
+        font-size: 1em;
+    }
+
+    .footer-phone,
+    .footer-email {
+        font-size: .8em;
+    }
 }
