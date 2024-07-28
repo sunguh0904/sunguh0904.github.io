@@ -163,12 +163,12 @@
     }
 
     .profile-img {
-        height: 90%;
+        height: 70%;
         width: 40%;
         border: 1px solid #000;
-        top: 10%;
+        top: 15%;
         left: 5%;
-        /* transform: translateY(-50%); */
+        transform: initial;
     }
 
     .profile-info {
