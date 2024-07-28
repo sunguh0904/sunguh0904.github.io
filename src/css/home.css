@@ -62,6 +62,15 @@ footer:not(:first-child) {
     .home-header {
         height: 50px;
         font-size: 1em;
+        background: #fff;
+    }
+
+    .home-header-name {
+        color: #000;
+    }
+
+    .main-wrap {
+        background: linear-gradient(180deg, #fff 50%, #000 50%);
     }
 
     .main-content {
