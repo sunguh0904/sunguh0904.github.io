@@ -58,7 +58,7 @@ footer:not(:first-child) {
 }
 
 /* mobile =================================================================================================================================== */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .home-header {
         height: 50px;
         font-size: 1em;
