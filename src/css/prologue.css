@@ -14,28 +14,23 @@
 /* header =================================================================================================================================== */
 .prologue-header {
     display: flex;
-    justify-content: space-between;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 3;
     width: 100%;
     background: linear-gradient(90deg, #000 50%, #fff 50%);
     height: 120px;
-}
-
-.prologue-header div {
-    margin-top: 40px;
-    font-size: 24px;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .prologue-header-current-page {
-    margin-left: 50px;
+    margin-left: 4%;
     color: #fff;
 }
 
 .prologue-header-name {
-    margin-right: 50px;
+    margin-right: 4%;
     color: #000;
 }
 
@@ -47,14 +42,15 @@
 }
 
 .profile-img {
-    width: 400px;
-    height: 400px;
+    width: 80%;
+    max-width: 400px;
+    height: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -70%);
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid #000;
     /* background-image: url(); */
     background-size: 400px 400px;
     background-repeat: no-repeat;
@@ -70,16 +66,13 @@
 }
 
 .profile-ko-name {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 15%;
 }
 
-.profile-eng-name {
-    font-size: 20px;
-}
-
+.profile-eng-name,
 .profile-birth-date {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 /* summary =================================================================================================================================== */
@@ -140,4 +133,121 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* mobile =================================================================================================================================== */
+@media (max-width: 768px) {
+    .prologue-wrap {
+        background: linear-gradient(180deg, #000 80%, #fff 20%);
+    }
+
+    .prologue-content {
+        display: block;
+        position: relative;
+    }
+
+    .prologue-header {
+        height: 50px;
+        font-size: 1em;
+        background: #000;
+    }
+
+    .prologue-header-name {
+        color: #fff;
+    }
+
+    .profile-wrap {
+        height: 20vh;
+        width: 100%;
+        display: flex;
+    }
+
+    .profile-img {
+        height: 70%;
+        width: 40%;
+        border: 1px solid #000;
+        top: 15%;
+        left: 5%;
+        transform: initial;
+    }
+
+    .profile-info {
+        height: 70%;
+        width: 50%;
+        transform: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .profile-ko-name {
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+    
+    .profile-eng-name,
+    .profile-birth-date {
+        font-size: 1em;
+    }
+
+    .summary-wrap {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .summary-content {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .summary-title {
+        font-size: 1em;
+        margin-bottom: 1%;
+    }
+    
+    .summary-discription {
+        font-size: .5em;
+    }
+    
+    .summary-certifiacte .summary-discription li,
+    .summary-education .summary-discription li {
+        height: 40px;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .summary-position {
+        font-size: 1em;
+        font-weight: bold;
+        /* width: 50px; */
+    }
+
+    .summary-skill .summary-position {
+        width: 50px;
+    }
+    
+    .summary-skill img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .img-border {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        width: 32px;
+        height: 32px;
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
