@@ -213,13 +213,12 @@
     }
     
     .summary-discription {
-        font-size: .5em;
+        font-size: .7em;
     }
     
     .summary-certifiacte .summary-discription li,
     .summary-education .summary-discription li {
         height: 40px;
-        /* display: flex; */
         flex-direction: column;
         align-items: start;
     }
@@ -227,7 +226,6 @@
     .summary-position {
         font-size: 1em;
         font-weight: bold;
-        /* width: 50px; */
     }
 
     .summary-skill .summary-position {
