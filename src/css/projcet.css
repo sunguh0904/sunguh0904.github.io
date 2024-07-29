@@ -65,19 +65,13 @@
 
 @media (max-width: 1200px) {
     .project-default {
-        font-size: 8em; /* 브라우저 너비가 1200px 이하일 때 폰트 크기 조정 */
+        font-size: 8em;
     }
 }
 
 @media (max-width: 900px) {
     .project-default {
-        font-size: 5em; /* 브라우저 너비가 900px 이하일 때 폰트 크기 조정 */
-    }
-}
-
-@media (max-width: 600px) {
-    .project-default {
-        font-size: 3em; /* 브라우저 너비가 600px 이하일 때 폰트 크기 조정 */
+        font-size: 5em;
     }
 }
 
@@ -145,8 +139,13 @@
 
 /* mobile =================================================================================================================================== */
 @media (max-width: 768px) {
+    .project-wrap {
+        background: none;
+    }
+    
     .project-header {
-        background: #fff
+        background: #fff;
+        height: 40px;
     }
 
     .project-content {
@@ -158,16 +157,36 @@
     }
     
     .project-content {
-        background: linear-gradient(0deg, #000 80%, #fff 20%);
+        background: linear-gradient(0deg, #000 50%, #fff 50%);
     }
 
     .project-list {
         width: 100%;
         height: 50vh;
+        flex-direction: initial;
+        gap: 5%;
+        border: 1px solid #ff0000;
+    }
+
+    .project-item {
+        width: 30%;
+        height: 30%;
+        border-radius: 10px;
+        padding: 20px 0 0 10px;
+    }
+
+    .project-item-name {
+        text-align: initial;
+        display: flex;
+        margin-top: 10%;
     }
 
     .project-view {
         width: 100%;
         height: 50vh;
+    }
+
+    .project-default {
+        font-size: 5em;
     }
 }
