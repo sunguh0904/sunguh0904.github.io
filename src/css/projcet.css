@@ -65,19 +65,13 @@
 
 @media (max-width: 1200px) {
     .project-default {
-        font-size: 8em; /* 브라우저 너비가 1200px 이하일 때 폰트 크기 조정 */
+        font-size: 8em;
     }
 }
 
 @media (max-width: 900px) {
     .project-default {
-        font-size: 5em; /* 브라우저 너비가 900px 이하일 때 폰트 크기 조정 */
-    }
-}
-
-@media (max-width: 600px) {
-    .project-default {
-        font-size: 3em; /* 브라우저 너비가 600px 이하일 때 폰트 크기 조정 */
+        font-size: 5em;
     }
 }
 
@@ -123,27 +117,108 @@
 /* header =================================================================================================================================== */
 .project-header {
     display: flex;
-    justify-content: space-between;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 3;
     width: 100%;
     background: linear-gradient(90deg, #fff 50%, #000 50%);
     height: 120px;
-}
-
-.project-header div {
-    margin-top: 40px;
-    font-size: 24px;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project-header-current-page {
-    margin-left: 50px;
+    margin-left: 4%;
     color: #000;
 }
 
 .project-header-name {
-    margin-right: 50px;
+    margin-right: 4%;
     color: #fff;
+}
+
+/* mobile =================================================================================================================================== */
+@media (max-width: 768px) {
+    .project-wrap {
+        background: none;
+    }
+
+    .project-header {
+        background: #fff;
+        height: 50px;
+        font-size: 1em;
+    }
+
+    .project-content {
+        display: block;
+    }
+
+    .project-header-name {
+        color: #000;
+    }
+
+    .project-content {
+        background: linear-gradient(0deg, #000 65%, #fff 35%);
+    }
+
+    .project-list {
+        width: 100%;
+        height: 35vh;
+        gap: 10px;
+    }
+
+    .project-item {
+        width: 80%;
+        height: 15%;
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    .project-item-title {
+        display: none;
+    }
+
+    .project-item-name {
+        margin-top: 2%;
+    }
+
+    .project-view {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .project-default {
+        font-size: 5em;
+    }
+
+    .project-description {
+        position: absolute;
+        top: 5%;
+        width: 90%;
+    }
+
+    .project-description h3 {
+        font-size: 1.2em;
+        margin-bottom: 1.5%;
+    }
+    
+    .project-description h4 {
+        font-size: 1em;
+        margin-bottom: 1%;
+    }
+    
+    .project-description h5 {
+        font-size: 1em;
+        margin-bottom: 1%;
+    }
+    
+    .feature-section,
+    .project-purpose {
+        margin-bottom: 1%;
+    }
+    
+    .project-description li {
+        font-size: 1em;
+        margin-bottom: 1%;
+    }
 }

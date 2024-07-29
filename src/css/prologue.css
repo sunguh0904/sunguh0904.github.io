@@ -138,7 +138,7 @@
 /* mobile =================================================================================================================================== */
 @media (max-width: 768px) {
     .prologue-wrap {
-        background: linear-gradient(180deg, #000 80%, #fff 20%);
+        background: linear-gradient(180deg, #fff 80%, #000 20%);
     }
 
     .prologue-content {
@@ -149,11 +149,11 @@
     .prologue-header {
         height: 50px;
         font-size: 1em;
-        background: #000;
+        background: #fff;
     }
 
-    .prologue-header-name {
-        color: #fff;
+    .prologue-header-current-page {
+        color: #000;
     }
 
     .profile-wrap {
@@ -165,7 +165,7 @@
     .profile-img {
         height: 70%;
         width: 40%;
-        border: 1px solid #000;
+        border: 1px solid #fff;
         top: 15%;
         left: 5%;
         transform: initial;
@@ -179,13 +179,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        color: #fff;
     }
-    
+
     .profile-ko-name {
         font-size: 1.5em;
         margin-bottom: 5%;
     }
-    
+
     .profile-eng-name,
     .profile-birth-date {
         font-size: 1em;
@@ -194,6 +195,7 @@
     .summary-wrap {
         height: 80vh;
         width: 100%;
+        mix-blend-mode: difference;
     }
 
     .summary-content {
@@ -206,23 +208,23 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     .summary-title {
         font-size: 1em;
         margin-bottom: 1%;
     }
-    
+
     .summary-discription {
         font-size: .7em;
     }
-    
+
     .summary-certifiacte .summary-discription li,
     .summary-education .summary-discription li {
         height: 40px;
         flex-direction: column;
         align-items: start;
     }
-    
+
     .summary-position {
         font-size: 1em;
         font-weight: bold;
@@ -231,14 +233,13 @@
     .summary-skill .summary-position {
         width: 50px;
     }
-    
+
     .summary-skill img {
         width: 16px;
         height: 16px;
     }
-    
+
     .img-border {
-        border: 1px solid #fff;
         border-radius: 5px;
         width: 32px;
         height: 32px;
