@@ -1,4 +1,4 @@
-import Main from "../page/Main"
+import Main from "../page/main/Main"
 
 const MainRoute = () => {
     return (
